@@ -142,7 +142,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-    text=f"<i>Found</i> <code>{leng}</code> <i>Results For Your Query:</i> <code>{query}</code>"
+    text=f"<i>🔥Found</i> <code>{leng}</code> <i>Results✅🤗මෙන්න ඔයා හොයපු සිංහල උපසිරැසි 👇:</i> <code>{query}</code>"
         
     try:
         await update.message.edit(
@@ -1528,7 +1528,7 @@ async def cb_set(bot, update: CallbackQuery):
             
             InlineKeyboardButton
                 (
-                    "Close 🔐", callback_data="close"
+                    "Close ❌", callback_data="close"
                 )
         ]
     ]
@@ -1573,7 +1573,7 @@ async def cb_status(bot, update: CallbackQuery):
             
             InlineKeyboardButton
                 (
-                    "Close 🔐", callback_data="close"
+                    "Close ❌", callback_data="close"
                 )
         ]
     ]
@@ -1601,14 +1601,14 @@ async def cb_about(bot, update: CallbackQuery):
     text=f"<i><u>Bot's Status</u></i>\n"
     text+=f"\n<b><i>Bot's Uptime:</i></b> <code>{time_formatter(time.time() - start_uptime)}</code>\n"
     text+=f"\n<b><i>Bot Funtion:</i></b> <i>Auto Filter Files</i>\n"
-    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/CrazyBotszGrp">@CrazyBotszGrp</a>\n"""
-    text+="""\n<b><i>Source Code:</i></b> <a href="https://github.com/CrazyBotsz/Adv-Filter-Bot-V2">Source</a>"""
+    text+=f"""\n<b><i>Bot Owner:</i></b> <a href="https://t.me/Wuzzup_BoY">4ᵏ✘Ｄᴇᴠɪʟ Ｔɪⷡᴛᷧᴀᷘɴ </> 「➍⓿➍」🕊™°✘</a>\n"""
+    text+="""\n<b><i>Developer:</i></b> <a href="https://t.me/Wuzzup_BoY">Develop</a>"""
 
     buttons = [
         [
             InlineKeyboardButton
                 (
-                    "My Dev ⚡", url="https://t.me/AlbertEinstein_TG"
+                    "My TG ⚡", url="https://t.me/Wuzzup_BoY"
                 ),
                 
             InlineKeyboardButton
@@ -1619,7 +1619,7 @@ async def cb_about(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "Close 🔐", callback_data="close"
+                    "Close ❌", callback_data="close"
                 )
         ]
     ]
@@ -1639,10 +1639,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/AlbertEinstein_TG'),
-            InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Filter-Bot-V2')
-        ],[
-            InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+            InlineKeyboardButton('My TG 👨‍🔬', url='https://t.me/Wuzzup_BoY'),
+            InlineKeyboardButton('Developer', url ='https://t.me/Wuzzup_BoY')
         ],[
             InlineKeyboardButton('Help ⚙', callback_data="help")
         ]]
@@ -1659,10 +1657,10 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "help":
         buttons = [[
-            InlineKeyboardButton('Home ⚡', callback_data='start'),
-            InlineKeyboardButton('About 🚩', callback_data='about')
+            InlineKeyboardButton('Home 🏠', callback_data='start'),
+            InlineKeyboardButton('About ✳️', callback_data='about')
         ],[
-            InlineKeyboardButton('Close 🔐', callback_data='close')
+            InlineKeyboardButton('Close ❌', callback_data='close')
         ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1677,8 +1675,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "about": 
         buttons = [[
-            InlineKeyboardButton('Home ⚡', callback_data='start'),
-            InlineKeyboardButton('Close 🔐', callback_data='close')
+            InlineKeyboardButton('Home 🏠', callback_data='start'),
+            InlineKeyboardButton('Close ❌', callback_data='close')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1707,4 +1705,3 @@ def time_formatter(seconds: float) -> str:
         ((str(minutes) + "m, ") if minutes else "") + \
         ((str(seconds) + "s") if seconds else "")
     return tmp
-
