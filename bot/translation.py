@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) @Wuzzup_BoY
+# (c) @tg_nsns_999
 
 class Translation(object):
     
