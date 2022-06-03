@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) @Wuzzup_BoY
+# (c) @tg_nsns_999
 
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
@@ -35,7 +35,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developer', url="https://t.me/Wuzzup_BoY"
+                                    'Developer', url="https://t.me/tg_nsns_999"
                                 )
                         ]
                     ]
@@ -47,9 +47,9 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developer', url='https://t.me/Wuzzup_BoY'),
+        InlineKeyboardButton('Developer', url='https://t.me/tg_nsns_999'),
     ],[
-        InlineKeyboardButton('Owner🛠', url='https://t.me/Wuzzup_BoY')
+        InlineKeyboardButton('Owner🛠', url='https://t.me/tg_nsns_999')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
